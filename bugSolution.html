@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const myDiv = document.getElementById('myDiv');
+      myDiv.addEventListener('click', function() {
+        alert('Div clicked!');
+      });
+    });
+  </script>
+</body>
+</html>
